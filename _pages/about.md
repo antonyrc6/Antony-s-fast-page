@@ -3,6 +3,8 @@ layout: page
 title: About Me
 permalink: /about/
 ---
+My name is Antony Y. I'm a 9th grader at Del Norte High School.
+
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
