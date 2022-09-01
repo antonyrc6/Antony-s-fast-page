@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -186,11 +186,7 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># variable of type list (many values in one variable)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"What is variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection?"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"What is different about the list output?"</span><span class="p">)</span>
-<span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Python"</span><span class="p">,</span> <span class="s2">"JavaScript"</span><span class="p">,</span> <span class="s2">"Java"</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"langs"</span><span class="p">,</span> <span class="n">langs</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">),</span> <span class="s2">"length"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">langs</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"- langs[0]"</span><span class="p">,</span> <span class="n">langs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection?"</span><span class="p">)</span> 
 
 <span class="nb">print</span><span class="p">()</span>
 
@@ -208,6 +204,37 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What is the variable name/key? value? type? primitive or collection, why?
+name John Doe &lt;class 'str'&gt;
+
+What is the variable name/key? value? type? primitive or collection, why?
+age 18 &lt;class 'int'&gt;
+
+What is the variable name/key? value? type? primitive or collection, why?
+score 90.0 &lt;class 'float'&gt;
+
+What is variable name/key? value? type? primitive or collection?
+What is different about the list output?
+langs ['Python', 'JavaScript', 'Java', 'bash', 'HTML', 'c', 'r'] &lt;class 'list'&gt; length 7
+- langs[0] Python &lt;class 'str'&gt;
+
+What is the variable name/key? value? type? primitive or collection, why?
+What is different about the dictionary output?
+person {'name': 'John Doe', 'age': 18, 'score': 90.0, 'langs': ['Python', 'JavaScript', 'Java', 'bash', 'HTML', 'c', 'r']} &lt;class 'dict'&gt; length 4
+- person["name"] John Doe &lt;class 'str'&gt;
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -244,28 +271,48 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span><span class="o">=</span> <span class="s2">""</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"mylist"</span><span class="p">,</span> <span class="n">mylist</span><span class="p">,</span> <span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># InfoDB is a data structure with expected Keys and Values</span>
 
 <span class="c1"># Append to List a Dictionary of key/values related to a person and cars</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Mortensen"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"October 21"</span><span class="p">,</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Antony"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Yu"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"September 12"</span><span class="p">,</span>
     <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"jmortensen@powayusd.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2015-Fusion"</span><span class="p">,</span> <span class="s2">"2011-Ranger"</span><span class="p">,</span> <span class="s2">"2003-Excursion"</span><span class="p">,</span> <span class="s2">"1997-F350"</span><span class="p">,</span> <span class="s2">"1969-Cadillac"</span><span class="p">]</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"rany52837@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Hobby"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"rc plane"</span><span class="p">],</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"rav4"</span><span class="p">]</span>
 <span class="p">})</span>
 
 <span class="c1"># Append to List a 2nd Dictionary of key/values</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Sunny"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Naidu"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"August 2"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"Temecula"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"snaidu@powayusd.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"4Runner"</span><span class="p">]</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Antony"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Yu"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"September 12"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"rany52837@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Hobby"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"rc plane"</span><span class="p">],</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"rav4"</span><span class="p">]</span>
 <span class="p">})</span>
 
 <span class="c1"># Print the data structure</span>
@@ -282,7 +329,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}]
+<pre>[{'FirstName': 'Antony', 'LastName': 'Yu', 'DOB': 'September 12', 'Residence': 'San Diego', 'Email': 'rany52837@powayusd.com', 'Hobby': ['rc plane'], 'Owns_Cars': ['rav4']}, {'FirstName': 'Antony', 'LastName': 'Yu', 'DOB': 'September 12', 'Residence': 'San Diego', 'Email': 'rany52837@powayusd.com', 'Hobby': ['rc plane'], 'Owns_Cars': ['rav4']}]
 </pre>
 </div>
 </div>
@@ -324,6 +371,7 @@ window.onload = wrap_img;
     <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Hobby:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Hobby"</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>  <span class="c1"># end="" make sure no return occurs</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
     <span class="nb">print</span><span class="p">()</span>
@@ -350,15 +398,17 @@ window.onload = wrap_img;
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>For loop output
 
-John Mortensen
+Antony Yu
 	 Residence: San Diego
-	 Birth Day: October 21
-	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+	 Birth Day: September 12
+	 Hobby: ['rc plane']
+	 Cars: rav4
 
-Sunny Naidu
-	 Residence: Temecula
-	 Birth Day: August 2
-	 Cars: 4Runner
+Antony Yu
+	 Residence: San Diego
+	 Birth Day: September 12
+	 Hobby: ['rc plane']
+	 Cars: rav4
 
 </pre>
 </div>
@@ -416,15 +466,15 @@ Sunny Naidu
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>While loop output
 
-John Mortensen
+Antony Yu
 	 Residence: San Diego
-	 Birth Day: October 21
-	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+	 Birth Day: September 12
+	 Cars: rav4
 
-Sunny Naidu
-	 Residence: Temecula
-	 Birth Day: August 2
-	 Cars: 4Runner
+Antony Yu
+	 Residence: San Diego
+	 Birth Day: September 12
+	 Cars: rav4
 
 </pre>
 </div>
@@ -472,6 +522,33 @@ Sunny Naidu
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Recursive loop output
+
+Antony Yu
+	 Residence: San Diego
+	 Birth Day: September 12
+	 Hobby: ['rc plane']
+	 Cars: rav4
+
+Antony Yu
+	 Residence: San Diego
+	 Birth Day: September 12
+	 Hobby: ['rc plane']
+	 Cars: rav4
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
