@@ -104,6 +104,17 @@
   
 
   
+      ,"page2": {
+          "title": "Class",
+          "content": "this page is for recording assignments. . week notes . week 0 | Creating the fastpage | . week 1 | Use python to create a quiz | . week 2 | List and dictionary, theme, darkmode | .",
+          "url": "https://antonyrc6.github.io/Antony-s-fast-page/class/",
+          "relUrl": "/class/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
   
@@ -125,7 +136,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://antonyrc6.github.io/Antony-s-fast-page/robots.txt",
