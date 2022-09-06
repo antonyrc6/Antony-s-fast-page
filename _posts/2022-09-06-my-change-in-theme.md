@@ -2,6 +2,7 @@
 layout: post
 title: My change in theme
 comments: ture
+categories: [markdown]
 ---
 > This is my attempt to change the theme of my fastpage
 
