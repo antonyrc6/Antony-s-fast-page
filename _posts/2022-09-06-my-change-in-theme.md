@@ -7,4 +7,5 @@ comments: ture
 
 #### I choose a theme called midnight and change the remote theme on my fastpage. It works great.
 
-![]({{site.baseurl}}/images/)
+![]({{site.baseurl}}/images/theme1.png)
+![]({{site.baseurl}}/images/theme2.png)
