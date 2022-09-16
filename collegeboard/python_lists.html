@@ -165,7 +165,7 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># variable of type string</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s2">"John Doe"</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">"Antony Yu"</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"name"</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">()</span>
@@ -173,7 +173,7 @@ window.onload = wrap_img;
 
 <span class="c1"># variable of type integer</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
-<span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">16</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"age"</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">()</span>
@@ -197,7 +197,6 @@ window.onload = wrap_img;
     <span class="s2">"name"</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
     <span class="s2">"age"</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span>
     <span class="s2">"score"</span><span class="p">:</span> <span class="n">score</span><span class="p">,</span>
-    <span class="s2">"langs"</span><span class="p">:</span> <span class="n">langs</span>
 <span class="p">}</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"person"</span><span class="p">,</span> <span class="n">person</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">),</span> <span class="s2">"length"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">person</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'- person["name"]'</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">"name"</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]))</span>
@@ -214,23 +213,20 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>What is the variable name/key? value? type? primitive or collection, why?
-name John Doe &lt;class 'str'&gt;
+name Antony Yu &lt;class 'str'&gt;
 
 What is the variable name/key? value? type? primitive or collection, why?
-age 18 &lt;class 'int'&gt;
+age 16 &lt;class 'int'&gt;
 
 What is the variable name/key? value? type? primitive or collection, why?
 score 90.0 &lt;class 'float'&gt;
 
 What is variable name/key? value? type? primitive or collection?
-What is different about the list output?
-langs ['Python', 'JavaScript', 'Java', 'bash', 'HTML', 'c', 'r'] &lt;class 'list'&gt; length 7
-- langs[0] Python &lt;class 'str'&gt;
 
 What is the variable name/key? value? type? primitive or collection, why?
 What is different about the dictionary output?
-person {'name': 'John Doe', 'age': 18, 'score': 90.0, 'langs': ['Python', 'JavaScript', 'Java', 'bash', 'HTML', 'c', 'r']} &lt;class 'dict'&gt; length 4
-- person["name"] John Doe &lt;class 'str'&gt;
+person {'name': 'Antony Yu', 'age': 16, 'score': 90.0} &lt;class 'dict'&gt; length 3
+- person["name"] Antony Yu &lt;class 'str'&gt;
 </pre>
 </div>
 </div>
@@ -271,11 +267,41 @@ person {'name': 'John Doe', 'age': 18, 'score': 90.0, 'langs': ['Python', 'JavaS
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span><span class="o">=</span> <span class="s2">""</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"mylist"</span><span class="p">,</span> <span class="n">mylist</span><span class="p">,</span> <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mylist</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"mylist"</span><span class="p">,</span> <span class="n">mylist</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">mylist</span><span class="p">),</span> <span class="s2">"length"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mylist</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"- mylist[0]"</span><span class="p">,</span> <span class="n">mylist</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">mylist</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>mylist {1, 2, 3, 4} &lt;class 'set'&gt; length 4
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">/tmp/ipykernel_569/1539318579.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> mylist <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">{</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">}</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"mylist"</span><span class="ansi-blue-fg">,</span> mylist<span class="ansi-blue-fg">,</span> type<span class="ansi-blue-fg">(</span>mylist<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"length"</span><span class="ansi-blue-fg">,</span> len<span class="ansi-blue-fg">(</span>mylist<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"- mylist[0]"</span><span class="ansi-blue-fg">,</span> mylist<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> type<span class="ansi-blue-fg">(</span>mylist<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">TypeError</span>: 'set' object is not subscriptable</pre>
+</div>
+</div>
+
 </div>
 </div>
 
