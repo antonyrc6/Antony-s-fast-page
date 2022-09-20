@@ -99,6 +99,17 @@
         
     
   
+    
+        ,"post9": {
+            "title": "Docker Server copy",
+            "content": "",
+            "url": "https://antonyrc6.github.io/Antony-s-fast-page/2022/06/16/docker-server-copy.html",
+            "relUrl": "/2022/06/16/docker-server-copy.html",
+            "date": " • Jun 16, 2022"
+        }
+        
+    
+  
 
   
   
@@ -117,7 +128,7 @@
   
       ,"page2": {
           "title": "Class",
-          "content": "this page is for recording assignments. . week notes . week 0 | Creating the fastpage | . week 1 | Use python to create a quiz | . week 2 | List and dictionary, theme, darkmode | .",
+          "content": "this page is for recording assignments. . week notes . week 0 | Creating the fastpage | . week 1 | Use python to create a quiz | . week 2 | List and dictionary, theme, darkmode | . week 3 | Creating a quiz in code.org | . week 4 | Run fastpage locally | .",
           "url": "https://antonyrc6.github.io/Antony-s-fast-page/class/",
           "relUrl": "/class/",
           "date": ""
