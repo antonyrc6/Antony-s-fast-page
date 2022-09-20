@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://antonyrc6.github.io/Antony-s-fast-page/2022/06/16/docker-server-copy.html</loc>
-<lastmod>2022-06-16T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>https://antonyrc6.github.io/Antony-s-fast-page/markdown/2022/06/16/docker-server.html</loc>
 <lastmod>2022-06-16T00:00:00-05:00</lastmod>
 </url>
@@ -39,6 +35,10 @@
 <url>
 <loc>https://antonyrc6.github.io/Antony-s-fast-page/markdown/2022/09/11/quiz-plan.html</loc>
 <lastmod>2022-09-11T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://antonyrc6.github.io/Antony-s-fast-page/markdown/2022/09/20/group-collaboration.html</loc>
+<lastmod>2022-09-20T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://antonyrc6.github.io/Antony-s-fast-page/about/</loc>
