@@ -150,7 +150,7 @@
   
       ,"page3": {
           "title": "Frontend",
-          "content": "[% include nav_frontend.html %] .",
+          "content": "| Overview | Tutorial | .",
           "url": "https://antonyrc6.github.io/Antony-s-fast-page/frontend/overview",
           "relUrl": "/frontend/overview",
           "date": ""
