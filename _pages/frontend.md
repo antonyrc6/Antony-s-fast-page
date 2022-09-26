@@ -5,5 +5,5 @@ permalink: /frontend/overview
 table: ture
 ---
 
-[% include nav_frontend.html %]
+{% include nav_frontend.html %}
 
