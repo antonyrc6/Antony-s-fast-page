@@ -6,6 +6,7 @@ toc: false
 comments: true
 nb_path: _notebooks/2022-08-26-mytoolcheck.ipynb
 layout: notebook
+categories: markdown
 ---
 
 <!--
