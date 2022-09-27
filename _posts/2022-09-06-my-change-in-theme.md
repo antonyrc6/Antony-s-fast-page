@@ -1,8 +1,10 @@
 ---
+toc: false
 layout: post
-title: My change in theme
-comments: ture
-categories: [markdown]
+description: Summary of change in theme on my fastpage
+categories: markdown
+title: my change in theme
+comments: true
 ---
 > This is my attempt to change the theme of my fastpage
 

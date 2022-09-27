@@ -4,6 +4,7 @@ layout: post
 description: group collaboration document for video
 categories: markdown
 title: group collaboration
+comments: true
 ---
 
 > this is our group collaboration document for our one minute video about the progress of week 4.
