@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>program design notes | antony’s fastpage</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="program design notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="notes for program design college board video." />
+<meta property="og:description" content="notes for program design college board video." />
+<link rel="canonical" href="https://antonyrc6.github.io/Antony-s-fast-page/markdown/2022/10/07/Program-Design-and-Development.html" />
+<meta property="og:url" content="https://antonyrc6.github.io/Antony-s-fast-page/markdown/2022/10/07/Program-Design-and-Development.html" />
+<meta property="og:site_name" content="antony’s fastpage" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-07T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="program design notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-07T00:00:00-05:00","datePublished":"2022-10-07T00:00:00-05:00","description":"notes for program design college board video.","headline":"program design notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://antonyrc6.github.io/Antony-s-fast-page/markdown/2022/10/07/Program-Design-and-Development.html"},"url":"https://antonyrc6.github.io/Antony-s-fast-page/markdown/2022/10/07/Program-Design-and-Development.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Antony-s-fast-page/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://antonyrc6.github.io/Antony-s-fast-page/feed.xml" title="antony's fastpage" /><link rel="shortcut icon" type="image/x-icon" href="/Antony-s-fast-page/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Antony-s-fast-page/">antony&#39;s fastpage</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Antony-s-fast-page/about/">About Me</a><a class="page-link" href="/Antony-s-fast-page/class/">Class</a><a class="page-link" href="/Antony-s-fast-page/frontend/overview">Frontend&amp;key</a><a class="page-link" href="/Antony-s-fast-page/search/">Search</a><a class="page-link" href="/Antony-s-fast-page/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">program design notes</h1><p class="page-description">notes for program design college board video.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-07T00:00:00-05:00" itemprop="datePublished">
+        Oct 7, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/Antony-s-fast-page/categories/#markdown">markdown</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <blockquote>
+  <p>Essential Knowledge</p>
+  <h5 id="a-development-process-can-be-ordered-and-intentional-or-exploratory-in-nature">A development process can be ordered and intentional or exploratory in nature</h5>
+  <h5 id="there-are-multiple-development-processed-like-investigation-designing-prototyping-and-testing">There are multiple development processed like investigation, designing, prototyping, and testing.</h5>
+  <h5 id="a-development-process-that-is-iterative-requires-refinement-and-revision-based-on-feedback-testing-or-reflection">A development process that is iterative requires refinement and revision based on feedback, testing, or reflection.</h5>
+  <h5 id="a-development-process-that-is-incremental-is-one-that-breaks-the-problem-into-smaller-pieces-and-makes-sure-each-piece-works">A development process that is incremental is one that breaks the problem into smaller pieces and makes sure each piece works.</h5>
+  <h5 id="investigation-in-a-development-process-is-useful-for-understanding-and-identifying-the-program-constraints">Investigation in a development process is useful for understanding and identifying the program constraints.</h5>
+  <p>How is a program developed</p>
+  <h5 id="programs-start-with-an-idea">Programs start with an idea.</h5>
+  <h5 id="developer-follow-steps-and-stick-with-plan">Developer follow steps and stick with plan.</h5>
+  <h5 id="development-is-exploratory">Development is exploratory.</h5>
+</blockquote>
+
+<h4 id="developers-decide-on-the-program-requirements-that">Developers decide on the program requirements that</h4>
+<h5 id="describe-how-a-program-should-behave">describe how a program should behave</h5>
+<h5 id="include-a-list-of-user-interactions">include a list of user interactions</h5>
+<h4 id="the-program-specifications-outline-all-of-the-requirements">The program specifications outline all of the requirements</h4>
+<h4 id="developers-create-a-prototype-of-the-program">Developers create a prototype of the program.</h4>
+<h5 id="an-incremental-process-is-frequently-used-so-developers-can-refine-small-parts-of-the-program">an incremental process is frequently used so developers can refine small parts of the program</h5>
+
+<blockquote>
+  <p>Testing</p>
+  <h4 id="developers-test-the-program-every-step-of-the-way">Developers test the program every step of the way.</h4>
+  <h4 id="testing-occurs-at">Testing occurs at</h4>
+  <h5 id="-micro-level">-Micro level</h5>
+  <h5 id="-macro-level">-Macro level</h5>
+  <h4 id="developers-refine-and-revise-through-testing-feedback-and-reflection">Developers refine and revise through testing, feedback, and reflection</h4>
+</blockquote>
+
+<blockquote>
+  <p>Essential Knowledge</p>
+  <h5 id="it-is-important-to-acknowledge-any-code-segments-that-were-developed-collaboratively-or-by-another-source">It is important to acknowledge any code segments that were developed collaboratively or by another source.</h5>
+  <h5 id="acknowledgement-of-a-code-segment-written-by-someone-else-and-used-in-a-program-can-be-in-the-program-documentation-the-acknowledgement-should-include-the-origin-or-original-authors-name">Acknowledgement of a code segment written by someone else and used in a program can be in the program documentation. The acknowledgement should include the origin or original author’s name.</h5>
+</blockquote>
+
+<blockquote>
+  <p>Program developments are rarely a solo endeavor</p>
+  <h4 id="people-usually-developed-by-team">People usually developed by team</h4>
+</blockquote>
+
+<blockquote>
+  <p>Essential Knowledge</p>
+</blockquote>
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="antonyrc6/Antony-s-fast-page"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/Antony-s-fast-page/markdown/2022/10/07/Program-Design-and-Development.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Antony-s-fast-page/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/Antony-s-fast-page/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Antony-s-fast-page/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>This is my fastpage for posting blogs.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/Antony-s-fast-page/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/Antony-s-fast-page/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
