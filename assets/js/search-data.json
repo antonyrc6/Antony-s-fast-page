@@ -204,6 +204,17 @@
 
   
       ,"page2": {
+          "title": "API",
+          "content": "| Overview | Covid19 RapidAPI | Jokes API | Users Database | . APIs in this Sub Menu . HTML, CSS, and JavaScript are the front-end of the API. Python and API resource definitions are used for RESTful API definitions. Abstraction of Frontend and Backend code, the exchange of standard data format (JSON), and guidelines for exchange (REST) is a technique that saves a lot of time between developers. Learning APIs is a highly recommended step for every developer trying to break into the world of tech. . Covid19: RapidAPI example. This is introducing APIs by accessing something that already exists. RapidAPI shows how many practice RESTful definitions. Almost any data source imagined can be accessed here. | Jokes: An introduction to Python RESTful API libraries. A Python List is used to make a Data Model, but persistence in this technique is limited, each time server is refreshed data is lost. This example is great for learning, but data is considered volatile. | Users: Another RESTful API library example. However, this backend establishes data persistence through the use of a database. This data if properly managed in deployment and migrated when changed can last forever. | . Web API Overview . . A Web API is an application programming interface typically for a web browser. Non-changing or Static Endpoints are used in interacting with the server-side Web APIs. RESTful Web APIs use HTTP methods to access resources via URL parameters, and use JSON for transmitting text between client and server. Server. In these examples, we will be using Python to define REST APIs. Python tools are very popular for building RESTful APIs | REST: Representational State Transfer. A set of guidelines on how to architect a network-connected software system. | Client-server: One guideline is a client and server must be decoupled from each other, allowing each to develop independently. | Layered system: The client may access the resources on the server indirectly through other layers such as a proxy or using authentication. This will be clarified by application and security requirements. | . Client. JavaScript is the frontend language used to consume data from the Python defined REST APIs. Fetch will be used to make HTTP requests, as well as handle HTTP response. There are four basic HTTP methods, they align with Create, Read, Update, Delete (CRUD). | GET =&gt; Retrieve/Read data | POST =&gt; Create data | PUT =&gt; Update data | DELETE =&gt; Delete data | . REST endpoints will have similarity from application to application. In planning APIs, for a Users system you can anticipate key methods. The Users RESTful APIs would likely contain these endpoints. | GET: /users =&gt; Get a list of users | GET: /users(id) =&gt; Get a single user | POST: /users =&gt; Create a new user | PUT: /users(id) =&gt; Update a user | DELETE: /users(id) =&gt; Delete a user | . Once a RESTful API receives and processes an HTTP request, it will return an HTTP response. Included in this response is an HTTP status code. Common status codes are shown. | 200 =&gt; OK, this response will then have the promise of JSON data | 400 =&gt; Bad Request | 404 =&gt; Not Found | 500 =&gt; Internal Server Error (aka bug) | . . . .",
+          "url": "https://antonyrc6.github.io/Antony-s-fast-page/api/overview",
+          "relUrl": "/api/overview",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page3": {
           "title": "Class",
           "content": "this page is for recording assignments. . week notes . week 0 | Creating the fastpage | . week 1 | Use python to create a quiz | . week 2 | List and dictionary, theme, darkmode | . week 3 | Creating a quiz in code.org | . week 4 | Running fast page locally | .",
           "url": "https://antonyrc6.github.io/Antony-s-fast-page/class/",
@@ -214,7 +225,7 @@
   
 
   
-      ,"page3": {
+      ,"page4": {
           "title": "Frontend&key",
           "content": "| Overview | Tutorial | . AWS private key . —–BEGIN RSA PRIVATE KEY—– MIIEowIBAAKCAQEAhGEt3gND/6Nsx5wHVQoiGOh5E1J02uVNQHsoxKTSxbNKfxlk ehARRnlppqzEO+1ej8djJusg0AOXDevpwyl3ZcyW+r7Pm1bp2xwNaO/uUltXD7pU TAnRkhBfAZPkLdwLpTLCUWQhFHtjypPBKFsOAp3QuqO2qpsR7qWRT6QP6H9zdQpk oUOA9na9bIvZ0tH3ucW9DTXbH8A4vOzFfW+uqGEsxYsDBhwFF0Le9ed8IkAY6S9I l9Mo1G/f3fuOERXiX2XZZ90tj/XQvxGzKBkaMge3pK3KGoG6zlYYOgLrWWBfDQVM /TNfglWIym2Ppfnv810fkPYO/2mlN+bozlocmQIDAQABAoIBADWjls09r4DW/E3J SCNKDtTe5ahRoe3MOcgl3zgGvSzEYCwt4sue1REkQw35NS4/GTDTDrcHUO1Ydw16 COc+VxXVl1uUk1STHADfVgOuLHgMcLN7wYpp9BPmNEjUXwHCBqnyblBCbTD6ak38 Hqk2c+/VeG0Xxv1MBjEXv1Bw3s1KuhJ5bfB0dK/QEC+9wfyDWHtMB3Cwc/fduyt3 UIS6l9g90WQRra2ud7YVVGhh+fLAupZjiojOzekG86ddoDcJmsdJix01Fl3t/ix6 soSyq2xxRwyUFTqqaBlKGVbHUshyv3rLVKHiZEO7Rml0E5k7mPmkgHBSK/1bRwJE lr/JnbECgYEAuTg6R98iG1KNgZmomSZqLaoSlW/5SnZH0wXMBMbnLx/cKgdxc2O7 Ls11sz7p1P8dd8Jn2QW+9bj3nKHHfRbnO9STPhD4yggGRTD5izztg4nnCp78dNqA Ml42IfjF7+dm9aDDW47cmx8f7ScNEV43jpBeAQ+6k8OhC8hQJvn8tOUCgYEAtvev yMDVuAFHy8uA89FdB9wKs5NniRdaqAx/ldKV6XuHEVHlSx3hL2YHLohWXriuBqTn GuzAwVy6DTUdccUTPqigqnLCsK7F9xk0xMEFUKgtwMvIH+wDUZZT5e9TxrlnfvHR LPLV/9G4rVI9JrRHb04Z7aE9/CE7P63F7WQIIaUCgYBtj1L6HITiQIyvsqLGJLD9 3fIsLxX488o8ittJoBY0C9aBjfGP3dhlMOeEZZyPf3CA3J/tAbcZRpZBMnj8B0Y0 X+PQ/N0NNH3xA604rYuZGUNvRufyfyUBpjTDF5KN/AUtGjE0wWbA40JRV54lPeQD EmZonlMxALEMdSrkQ081+QKBgE4pn6m2X1adDWvNQwhlr0V1RgkS9o8FMBBMTpDV hn9Y6wmGH9soJ5PVFUpWqfcLFCT4e1XwQCQalcygnTSGCUOiTAikv/E0qJN37CgF gVzEi88p/xNMAtruymaXCAYEHGeJrF90WeFQWYGJeWA4ca/mAIOYd19nXuVEOiLA sgyVAoGBAIJwiUoH0WJyQC9lR0OPtealRxQ01MqMI4P1icyTOBSnpmiREFs9UGWi ppVjuWiaF74ECkVnlhTMwKnTH0Q6nyZ78SVilBPdO7/HNO/OqFz46FRaCzhcpBxT SNQv5f2emuhnpIa4Bq8hw6Z8NPzPP1RRDMlAaMBzEChEBKr4YY27 —–END RSA PRIVATE KEY—– .",
           "url": "https://antonyrc6.github.io/Antony-s-fast-page/frontend/overview",
@@ -248,7 +259,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://antonyrc6.github.io/Antony-s-fast-page/robots.txt",
