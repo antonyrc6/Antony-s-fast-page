@@ -28,6 +28,7 @@ comments: true
 
 ![](vscode-remote://wsl%2Bubuntu-20.04/home/antony/antony-s-fastpage/images/logic%20error.PNG)
 
+![]({{site.baseurl}}/images/logic error.PNG)
 > Syntax Error
 
 ##### This is a mistake when a programmer makes a typo or writes some code that doesn't follow the rule of the language.
