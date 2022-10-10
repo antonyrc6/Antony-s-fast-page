@@ -23,4 +23,7 @@ comments: true
 ###### logic error, syntax error, runtime error, overflow error.
 
 ##### Logic error is caused by the programmer making a mistake in the algorithm which causes by program to behave unexpectedly
-![]({{site.baseurl}}/images/logic error.png)
+
+![](vscode-remote://wsl%2Bubuntu-20.04/home/antony/antony-s-fastpage/images/logic%20error.PNG)
+
+
