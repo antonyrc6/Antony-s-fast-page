@@ -40,5 +40,5 @@ comments: true
 #### People usually developed by team
 
 #### Quiz Result
-![](/images/1as.PNG)
+![]({{site.baseurl}}/images/1as.PNG)
 

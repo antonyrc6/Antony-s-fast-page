@@ -38,5 +38,5 @@ comments: true
 ##### colon/semicolon, parenthesis, surly braces, indentation, quotes, variable definition.
 
 #### Quiz Result
-![](/images/1as.PNG)
+![]({{site.baseurl}}/images/1as.PNG)
 
