@@ -39,6 +39,6 @@ comments: true
 > Program developments are rarely a solo endeavor
 #### People usually developed by team
 
-> Essential Knowledge
-
+#### Quiz Result
+![](/images/1as.PNG)
 
