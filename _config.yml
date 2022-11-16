@@ -40,8 +40,6 @@ baseurl: "/Antony-s-fast-page" # the subpath of your site, e.g. "/blog".
 minima:
   skin: dark
   social_links:
-    twitter: fastdotai
-    github: fastai
 
 # Set this to true to get LaTeX math equation support
 use_math: 
