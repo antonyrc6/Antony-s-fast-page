@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": "",
-            "url": "https://antonyrc6.github.io/Antony-s-fast-page/2022/12/05/lesson-3.5_3.7-hack.html",
-            "relUrl": "/2022/12/05/lesson-3.5_3.7-hack.html",
+            "title": "LESSON HACK",
+            "content": "Hacks . Explain in your own words what each logical operator does | Not displays the opposite of the input,and evaluate two conditions in the same range at the same time, or evaluate two conditions in the different range at the same time. | Code your own scenario that makes sense for each logical operator | . Not . haveDinner = True result = not(haveDinner) print(result) . False . And . money = 163 if money &gt; 75 and money &lt;= 170: print(&quot;You have enough money&quot;) . You have enough money . Or . item = 1 money = 25 if item &lt;= 0 or money &gt; 20: print(&quot;you can afford it&quot;) . you can afford it . Challenge Level 1 . myList = [&#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, &#39;u&#39;] letter1 = str(input(&quot;Which letter do you want to find?&quot;)) letter_count = myList.count(letter1) print(&quot;The lettter&quot;, letter1, &quot;is the&quot;, letter_count, &quot;number&quot;) . The lettter a is the 1 number . Question 1 . The output will be changed . Question 2 . Total will be 10. The price will be 15 after one year. . Hacks . Create 3 differnt flow charts representing nested statements and transfer them into code. | Create a piece of code that displays four statements instead of three. Try to do more if you can. | Make piece of code that gives three different recommandations for possible classes to take at a scholl based on two different condtions. These conditions could be if the student likes STEM or not. | .",
+            "url": "https://antonyrc6.github.io/Antony-s-fast-page/lesson",
+            "relUrl": "/lesson",
             "date": " • Dec 5, 2022"
         }
         
