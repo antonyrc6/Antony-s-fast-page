@@ -312,8 +312,8 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'e'</span><span class="p">,</span> <span class="s1">'i'</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">,</span> <span class="s1">'u'</span><span class="p">]</span>
 <span class="n">letter1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Which letter do you want to find?"</span><span class="p">))</span>
-<span class="n">letter_count</span> <span class="o">=</span> <span class="n">myList</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">letter1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"The lettter"</span><span class="p">,</span> <span class="n">letter1</span><span class="p">,</span> <span class="s2">"is the"</span><span class="p">,</span> <span class="n">letter_count</span><span class="p">,</span> <span class="s2">"number"</span><span class="p">)</span>
+<span class="n">index</span> <span class="o">=</span> <span class="n">myList</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The lettter"</span><span class="p">,</span> <span class="n">letter1</span><span class="p">,</span> <span class="s2">"is the"</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="s2">"number"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -326,7 +326,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The lettter a is the 1 number
+<pre>The lettter u is the 4 number
 </pre>
 </div>
 </div>
