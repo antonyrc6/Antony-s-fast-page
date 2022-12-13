@@ -142,12 +142,91 @@ window.onload = wrap_img;
 </h3>
 <ul>
 <li>why is it important to know that algorithms that look different can do the same thing and that algorithms that look the same might have different results?</li>
+<li>It is important to know that algorithms looks different is because there will be a difference can make it wrong, even they looks the same.</li>
 <li>for the converted conditional to boolean conversion</li>
 </ul>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">isSolid</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">isSoft</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="k">if</span> <span class="n">isSolid</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Don't Eat it"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">isLiquid</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Eat it"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Don't eat it"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Eat it
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">isSolid</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">isSoft</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="n">eatTime</span> <span class="o">=</span> <span class="ow">not</span><span class="p">(</span><span class="n">isSolid</span><span class="p">)</span> <span class="ow">and</span> <span class="n">isSoft</span>
+<span class="k">if</span> <span class="n">eatTime</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Don't eat it"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">eatTime</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Eat it"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Eat it
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

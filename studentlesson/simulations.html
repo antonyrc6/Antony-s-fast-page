@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -335,10 +335,36 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>You chose corner number 2 and are still in!
-You chose corner number 3 and are still in!
-You chose corner number 4 and you're OUT
+<pre>You chose corner number 6 and are still in!
+You chose corner number 2 and are still in!
+You chose corner number 1000 and are still in!
+You chose corner number 4646464646 and are still in!
+You chose corner number 464646 and are still in!
+You chose corner number 4646 and are still in!
+You chose corner number 46464 and are still in!
+You chose corner number 4646 and are still in!
+You chose corner number 4646 and are still in!
+You chose corner number 4646 and are still in!
+You chose corner number 4646 and are still in!
+You chose corner number 46 and are still in!
 </pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/antony/antony-s-fastpage/_notebooks/2022-12-13-Lesson-3.16.ipynb Cell 9</span> in <span class="ansi-cyan-fg">&lt;cell line: 4&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu-20.04/home/antony/antony-s-fastpage/_notebooks/2022-12-13-Lesson-3.16.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> chooseCorner = input("What corner do you choose?")
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu-20.04/home/antony/antony-s-fastpage/_notebooks/2022-12-13-Lesson-3.16.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> corner = random.randint(1,4)
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu-20.04/home/antony/antony-s-fastpage/_notebooks/2022-12-13-Lesson-3.16.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> if int(chooseCorner) == corner:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu-20.04/home/antony/antony-s-fastpage/_notebooks/2022-12-13-Lesson-3.16.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span>     status = "out"
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu-20.04/home/antony/antony-s-fastpage/_notebooks/2022-12-13-Lesson-3.16.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>     print("You chose corner number " + chooseCorner + " and you're OUT")
+
+<span class="ansi-red-fg">ValueError</span>: invalid literal for int() with base 10: ''</pre>
 </div>
 </div>
 
@@ -528,7 +554,7 @@ You chose corner number 4 and you're OUT
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>you rolled: [5, 1, 2]
+<pre>you rolled: [5, 4, 3]
 </pre>
 </div>
 </div>
