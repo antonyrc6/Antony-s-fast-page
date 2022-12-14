@@ -188,13 +188,9 @@ window.onload = wrap_img;
 <a class="anchor" href="#Hack-3.15.1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 3.15.1<a class="anchor-link" href="#Hack-3.15.1"> </a>
 </h3>
 <ul>
-<li>
-<p>Write a few lines of code that implements the import function</p>
-</li>
-<li>
-<p>Define what an import random function do</p>
-</li>
-<li>I allow you pick a random integer from a range.</li>
+<li>Write a few lines of code that implements the import function</li>
+<li>Define what an import random function do</li>
+<li>It allows you to pick a random integer from a range.</li>
 <li>List a few other things that we can import other than random</li>
 <li>You can also import flask, NumPy, and TensorFlow</li>
 </ul>
@@ -209,13 +205,10 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-<span class="n">num</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"your random number is"</span><span class="p">,</span><span class="n">num</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">20</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"You got it"</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Try again"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"what number do you want to square root?"</span><span class="p">)</span>
+<span class="n">squart</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The root of"</span><span class="p">,</span><span class="n">num</span><span class="p">,</span><span class="s2">"is"</span><span class="p">,</span><span class="n">squart</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -228,8 +221,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>your random number is 65
-Try again
+<pre>The root of 4 is 2.0
 </pre>
 </div>
 </div>
@@ -254,11 +246,54 @@ Try again
 <li>
 <p>Also answer this question: What numbers can be outputted from RANDOM(12,20) and what numbers are excluded?</p>
 </li>
+<li>It's any number greater than or equal to 12 and less than or equal to 20.</li>
 </ul>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">landed_on</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">landed_on</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">:</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s2">"rice"</span>
+<span class="k">elif</span> <span class="mi">4</span><span class="o">&lt;=</span> <span class="n">landed_on</span> <span class="o">&lt;=</span> <span class="mi">6</span><span class="p">:</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s2">"noodle"</span>
+<span class="k">elif</span> <span class="n">landed_on</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s2">"fruit"</span>
+<span class="k">elif</span> <span class="n">landed_on</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s2">"pizza"</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The food is"</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The food is pizza
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
