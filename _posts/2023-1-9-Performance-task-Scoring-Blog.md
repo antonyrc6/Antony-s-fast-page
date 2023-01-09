@@ -26,3 +26,4 @@ layout: blog
 | Procedural Abstraction       | 1             | 1                  | The process of the student's program is shown complete and simple.    |
 | Algorithm Implementation     | 1             | 1                  | The student describe how his algorithm works in the written response. |
 | Testing                      | 1             | 1                  | The student test many scenarios of how the program is going to work.  |
+###
