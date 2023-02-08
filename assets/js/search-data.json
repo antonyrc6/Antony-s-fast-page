@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Project Blog",
-            "content": "Create Account Feature . I am working on the login and create account feature in our group. I am doing research based on the database example on the APCSP page. Instead of using javascript container in the example, I decided to replace it with a python file using SQLite database. The database will be storing users id(uid), user&#39;s name(name), and user&#39;s password(password). . Login purpose . The user will be guided to the game page that my other group members are working on. In this way, each user can save their progress in the last game and keep working on it. .",
+            "content": "Create Account Feature . I am working on the login and create account feature in our group. I am doing research based on the database example on the APCSP page. Instead of using javascript container in the example, I decided to replace it with a python file using SQLite database. The database will be storing users id(uid), user&#39;s name(name), and user&#39;s password(password). . Login purpose . The user will be guided to the game page that my other group members are working on. In this way, instead of starting the stock game all over again, each user can save their progress in the last game and keep working on it. .",
             "url": "https://antonyrc6.github.io/Antony-s-fast-page/2023/02/06/Project-Blog.html",
             "relUrl": "/2023/02/06/Project-Blog.html",
             "date": " • Feb 6, 2023"
