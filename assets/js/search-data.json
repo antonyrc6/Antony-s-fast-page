@@ -13,7 +13,7 @@
   
     
         ,"post1": {
-            "title": "Night at the Museum Blog",
+            "title": "Full Stack",
             "content": "GET and POST for backend . @app.route(&#39;/register&#39;, methods=[&quot;POST&quot;, &quot;GET&quot;]) def register(): if request.method == &#39;POST&#39;: username = request.form[&#39;username&#39;] password = request.form[&#39;password&#39;] if check_user(username, password): return &quot;user already exist&quot; else: register_user(username, password) return redirect(&#39;/&#39;) @app.route(&#39;/login&#39;, methods=[&quot;POST&quot;, &quot;GET&quot;]) def login(): if request.method == &#39;POST&#39;: username = request.form[&#39;username&#39;] password = request.form[&#39;password&#39;] print(check_user(username, password)) if check_user(username, password): session[&#39;username&#39;]=username return redirect(&#39;/home&#39;) else: return &quot;Wrong Username or Password&quot; @app.route(&#39;/home&#39;, methods=[&quot;POST&quot;,&quot;GET&quot;]) def home(): if &#39;username&#39; in session: return render_template(&quot;index.html&quot;, username=session[&#39;username&#39;]) else: return &quot;Wrong Credentials&quot; . Table for create and read operation . .",
             "url": "https://antonyrc6.github.io/Antony-s-fast-page/2023/02/24/Full-Stack.html",
             "relUrl": "/2023/02/24/Full-Stack.html",
