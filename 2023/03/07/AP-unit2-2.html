@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      12 min read
     
 </span></p>
 
@@ -359,7 +359,7 @@ window.onload = wrap_img;
         <span class="p">]</span>
     <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
         <span class="c1"># File to open</span>
-        <span class="n">image</span><span class="p">[</span><span class="s1">'filename'</span><span class="p">]</span> <span class="o">=</span> <span class="n">path</span> <span class="o">/</span> <span class="n">image</span><span class="p">[</span><span class="s1">'file'</span><span class="p">]</span>  <span class="c1"># file with path</span>
+        <span class="n">image</span><span class="p">[</span><span class="s1">'0.PNG'</span><span class="p">]</span> <span class="o">=</span> <span class="n">path</span> <span class="o">/</span> <span class="n">image</span><span class="p">[</span><span class="s1">'file'</span><span class="p">]</span>  <span class="c1"># file with path</span>
     <span class="k">return</span> <span class="n">images</span>
 
 <span class="c1"># Large image scaled to baseWidth of 320</span>
@@ -379,7 +379,7 @@ window.onload = wrap_img;
 <span class="c1"># Set Properties of Image, Scale, and convert to Base64</span>
 <span class="k">def</span> <span class="nf">image_management</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>  <span class="c1"># path of static images is defaulted        </span>
     <span class="c1"># Image open return PIL image object</span>
-    <span class="n">img</span> <span class="o">=</span> <span class="n">pilImage</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'filename'</span><span class="p">])</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">pilImage</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="s1">'0.PNG'</span><span class="p">])</span>
     
     <span class="c1"># Python Image Library operations</span>
     <span class="n">image</span><span class="p">[</span><span class="s1">'format'</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">format</span>
@@ -442,6 +442,43 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">/tmp/ipykernel_2879/2492854849.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     80</span>     <span class="ansi-red-fg"># Display meta data, scaled view, and grey scale for each image</span>
+<span class="ansi-green-intense-fg ansi-bold">     81</span>     <span class="ansi-green-fg">for</span> image <span class="ansi-green-fg">in</span> images<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 82</span><span class="ansi-red-fg">         </span>image_management<span class="ansi-blue-fg">(</span>image<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     83</span>         print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"---- meta data -----"</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     84</span>         print<span class="ansi-blue-fg">(</span>image<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">'label'</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/tmp/ipykernel_2879/2492854849.py</span> in <span class="ansi-cyan-fg">image_management</span><span class="ansi-blue-fg">(image)</span>
+<span class="ansi-green-intense-fg ansi-bold">     36</span> <span class="ansi-green-fg">def</span> image_management<span class="ansi-blue-fg">(</span>image<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>  <span class="ansi-red-fg"># path of static images is defaulted</span>
+<span class="ansi-green-intense-fg ansi-bold">     37</span>     <span class="ansi-red-fg"># Image open return PIL image object</span>
+<span class="ansi-green-fg">---&gt; 38</span><span class="ansi-red-fg">     </span>img <span class="ansi-blue-fg">=</span> pilImage<span class="ansi-blue-fg">.</span>open<span class="ansi-blue-fg">(</span>image<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">'0.PNG'</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     39</span> 
+<span class="ansi-green-intense-fg ansi-bold">     40</span>     <span class="ansi-red-fg"># Python Image Library operations</span>
+
+<span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/PIL/Image.py</span> in <span class="ansi-cyan-fg">open</span><span class="ansi-blue-fg">(fp, mode, formats)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3090</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3091</span>     <span class="ansi-green-fg">if</span> filename<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 3092</span><span class="ansi-red-fg">         </span>fp <span class="ansi-blue-fg">=</span> builtins<span class="ansi-blue-fg">.</span>open<span class="ansi-blue-fg">(</span>filename<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"rb"</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3093</span>         exclusive_fp <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">True</span>
+<span class="ansi-green-intense-fg ansi-bold">   3094</span> 
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: '/home/antony/vscode/Antony-s-fast-page/_notebooks/images/green-square-16.png'</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -630,6 +667,50 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">/tmp/ipykernel_2879/1243841396.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">    127</span> <span class="ansi-red-fg"># Jupyter Notebook Visualization of Images</span>
+<span class="ansi-green-intense-fg ansi-bold">    128</span> <span class="ansi-green-fg">if</span> __name__ <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">"__main__"</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 129</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">for</span> ido <span class="ansi-green-fg">in</span> image_objects<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span> <span class="ansi-red-fg"># ido is an Imaged Data Object</span>
+<span class="ansi-green-intense-fg ansi-bold">    130</span> 
+<span class="ansi-green-intense-fg ansi-bold">    131</span>         print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"---- meta data -----"</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/tmp/ipykernel_2879/1243841396.py</span> in <span class="ansi-cyan-fg">image_objects</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">    118</span>     path<span class="ansi-blue-fg">,</span> images <span class="ansi-blue-fg">=</span> image_data<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    119</span>     <span class="ansi-green-fg">for</span> image <span class="ansi-green-fg">in</span> images<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 120</span><span class="ansi-red-fg">         id_Objects.append(Image_Data(source=image['source'], 
+</span><span class="ansi-green-intense-fg ansi-bold">    121</span>                                   label<span class="ansi-blue-fg">=</span>image<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">'label'</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">    122</span>                                   file<span class="ansi-blue-fg">=</span>image<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">'file'</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span>
+
+<span class="ansi-green-fg">/tmp/ipykernel_2879/1243841396.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, source, label, file, path, baseWidth)</span>
+<span class="ansi-green-intense-fg ansi-bold">     17</span> 
+<span class="ansi-green-intense-fg ansi-bold">     18</span>         <span class="ansi-red-fg"># Open image and scale to needs</span>
+<span class="ansi-green-fg">---&gt; 19</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_img <span class="ansi-blue-fg">=</span> pilImage<span class="ansi-blue-fg">.</span>open<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_filename<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     20</span>         self<span class="ansi-blue-fg">.</span>_format <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_img<span class="ansi-blue-fg">.</span>format
+<span class="ansi-green-intense-fg ansi-bold">     21</span>         self<span class="ansi-blue-fg">.</span>_mode <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_img<span class="ansi-blue-fg">.</span>mode
+
+<span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/PIL/Image.py</span> in <span class="ansi-cyan-fg">open</span><span class="ansi-blue-fg">(fp, mode, formats)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3090</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3091</span>     <span class="ansi-green-fg">if</span> filename<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 3092</span><span class="ansi-red-fg">         </span>fp <span class="ansi-blue-fg">=</span> builtins<span class="ansi-blue-fg">.</span>open<span class="ansi-blue-fg">(</span>filename<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"rb"</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3093</span>         exclusive_fp <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">True</span>
+<span class="ansi-green-intense-fg ansi-bold">   3094</span> 
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: '/home/antony/vscode/Antony-s-fast-page/_notebooks/images/green-square-16.png'</pre>
+</div>
+</div>
+
 </div>
 </div>
 
