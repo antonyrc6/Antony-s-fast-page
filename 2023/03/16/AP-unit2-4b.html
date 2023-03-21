@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -307,7 +307,6 @@ window.onload = wrap_img;
 (7, 'Marion Ravenwood', 'raven', 'sha256$b4aQWVWVDWWER6Hu$e30099692a8c55c190afea781d4618fb52dfe5a2e072b3d4d1cd7cd38c9985e7', '1921-10-21')
 (8, 'Thomas Edison', '', 'sha256$rZ6SUpPOfC1Q7Mmf$d176db42dfaf4872069dc4dbad81e86f97e606d7001a91dc4a2de292f57e295b', '2023-03-15')
 (9, 'antony', 'antony', '1234', 20061234)
-(10, 'antony', '1324', '1234', '2023-03-20')
 </pre>
 </div>
 </div>
@@ -327,8 +326,10 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?<br>
+The one in 2.4b is better because the code is shorter when the variables were defined.</li>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?<br>
+No, sql insert insert the data into the table.</li>
 </ul>
 </blockquote>
 
@@ -385,7 +386,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>A new user record 1234 has been created
+<pre>A new user record antony123 has been created
 </pre>
 </div>
 </div>
@@ -405,9 +406,12 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+<li>What does the hacked part do?<br>
+The hack part tells you your password is too short.</li>
+<li>Explain try/except, when would except occur?<br>
+Try and except try a function and except is run when try did not work.</li>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?<br>
+Password seems to be repeated because the the password can not be create when the password is too short.</li>
 </ul>
 </blockquote>
 
@@ -488,8 +492,10 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<br>
+Yes, without conformation, user may mis delete its profiles.</li>
+<li>In the print statemements, what is the "f" and what does {uid} do?<br>
+"f" means a defined function or variable. Without f, variables like uid will not be displayed.</li>
 </ul>
 </blockquote>
 
@@ -563,8 +569,10 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat?<br>
+The menu repeats when no option was selected or wrong options that is not defined was selected</li>
+<li>Could you refactor this menu?  Make it work with a List?<br>
+Yes, you could use list to record the functions.</li>
 </ul>
 </blockquote>
 
@@ -632,9 +640,11 @@ Perform Jupyter 'Run All' prior to starting menu
 </h1>
 <ul>
 <li>Add this Blog to you own Blogging site.  In the Blog add notes and observations on each code cell.</li>
-<li>In this implementation, do you see procedural abstraction?</li>
+<li>In this implementation, do you see procedural abstraction?<br>
+Procedural abstraction is when defining database and the variable in database like username and password.</li>
 <li>In 2.4a or 2.4b lecture<ul>
-<li>Do you see data abstraction?  Complement this with Debugging example.</li>
+<li>Do you see data abstraction?  Complement this with Debugging example.<br>
+Data abstraction is used in the menu where each function has corresponding letter so the user can select option with a key.</li>
 <li>Use Imperative or OOP style to Create a new Table or do something that applies to your CPT project.</li>
 </ul>
 </li>
