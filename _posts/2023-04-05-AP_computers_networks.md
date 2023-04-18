@@ -24,15 +24,15 @@ List specification of your Computer, or Computers if working as Pair/Trio
 - **OS**: <u>Windows 10 Home</u>
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- **Input devices**:
-- **Output devices**:
-- **Program File**:
-- **Program Code**:
-- **Processes**:
-- **Ports**:
-- **Data File**:
-- **Inspect Running Code**:
-- **Inspect Variables**:
+- **Input devices**: <u>A device that input signal into the computer. Ex: keyboard, mouse, microphone...</u>
+- **Output devices**: <u>A device that takes signal from computer and give the user a outcome. Ex: speaker, lights, monitor...</u>
+- **Program File**: The directory in Windows where third-party applications are installed by default.
+- **Program Code**: Set of instructions, or a system of rules, written in a particular programming language
+- **Processes**: The instance of a computer program that is being executed by one or many threads
+- **Ports**: A software-defined number associated to a network protocol that receives or transmits communication for a specific service.
+- **Data File**: A computer file which stores data to be used by a computer application or system, including input and output data.
+- **Inspect Running Code**: To check if the code is enfective.
+- **Inspect Variables**: To check if the varibles are working in the correct way.
 
 
 ![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
