@@ -52,17 +52,27 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - **Path**:
-    - **Route**:
-    - **Computer System**:
-    - **Computer Device**:
-    - **Bandwidth**:
-    - **Computer Network**:
+    - **Path**: The direction to a file or directory.
+    - **Route**: The path a data packet travels on a network.
+    - **Computer System**: A computer system is a programmable electronic device that can accept input.
+    - **Computer Device**: A functional unit that can perform substantial computations.
+    - **Bandwidth**: Information you receive every second.
+    - **Computer Network**: To interconnected computing devices that can exchange data and share resources with each other
 
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
-
+- True: Open standards and protocols enable different manufacturers
+and developers to build hardware and software that can
+communicate with hardware and software on the rest of the
+- False: IETF is a task force used to enforce laws to keep manufacturers out of
+the internet.
+- False: Routes are determined in advanced and are not flexible.
+- True: A protocol is an agreed-upon set of rules that specify the behavior of a system.
+- False: UDP guarantees transfers and is faster.
+- False: The World Wide Web is the internet.
+- True: HTTP is a protocol used by the World Wide Web.
+internet.
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
     - Access to the internet depends on the ability to connect a computing device to an internet connected device.
