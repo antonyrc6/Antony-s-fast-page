@@ -125,6 +125,7 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
+-Fault tolerance: Fault tolerance is the property that enables a system to continue operating properly. It guarantees the system or program running while certain amount of parts malfunctioned.
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
