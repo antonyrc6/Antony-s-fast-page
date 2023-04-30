@@ -10,17 +10,17 @@ def get_db_connection():
     return conn
 
 # create a route for creating a profile
-@app.route('/create-form', methods=['GET', 'POST'])
+@app.route('/create_profile', methods=['GET', 'POST'])
 def create_profile():
     if request.method == 'POST':
         # get the input values from the form
         id = request.form['id']
-        name = request.form['name']
+        student = request.form['name']
         grade = request.form['grade']
 
         # insert the profile into the database
         conn = get_db_connection()
-        conn.execute('INSERT INTO students (id, name, grade) VALUES (?, ?, ?)', (id, name, grade))
+        conn.execute('INSERT INTO grades (id, student, grade) VALUES (?, ?, ?)', (id, student, grade))
         conn.commit()
         conn.close()
 
@@ -28,10 +28,10 @@ def create_profile():
         return jsonify({'message': 'Profile created successfully!'})
 
     # if it's a GET request, render the create profile template
-    return render_template('./sql_frontend.html')
+    return render_template('create_profile.html')
 
 # create a route for reading a profile
-@app.route('/read-form', methods=['GET', 'POST'])
+@app.route('/read_profile', methods=['GET', 'POST'])
 def read_profile():
     if request.method == 'POST':
         # get the input value from the form
@@ -43,13 +43,13 @@ def read_profile():
         conn.close()
 
         # render the profile template with the selected profile data
-        return render_template('./sql_frontend.html', profile=profile)
+        return render_template('profile.html', profile=profile)
 
     # if it's a GET request, render the read profile template
-    return render_template('./sql_frontend.html')
+    return render_template('read_profile.html')
 
 # create a route for updating a profile
-@app.route('/update-form', methods=['GET', 'POST'])
+@app.route('/update_profile', methods=['GET', 'POST'])
 def update_profile():
     if request.method == 'POST':
         # get the input values from the form
@@ -58,7 +58,7 @@ def update_profile():
 
         # update the profile in the database
         conn = get_db_connection()
-        conn.execute('UPDATE students SET grade = ? WHERE id = ?', (grade, id))
+        conn.execute('UPDATE grades SET grade = ? WHERE id = ?', (grade, id))
         conn.commit()
         conn.close()
 
@@ -66,10 +66,10 @@ def update_profile():
         return jsonify({'message': 'Profile updated successfully!'})
 
     # if it's a GET request, render the update profile template
-    return render_template('./sql_frontend.html')
+    return render_template('update_profile.html')
 
 # create a route for deleting a profile
-@app.route('/delete-form', methods=['GET', 'POST'])
+@app.route('/delete_profile', methods=['GET', 'POST'])
 def delete_profile():
     if request.method == 'POST':
         # get the input value from the form
@@ -77,7 +77,7 @@ def delete_profile():
 
         # delete the profile from the database
         conn = get_db_connection()
-        conn.execute('DELETE FROM students WHERE id = ?', (id,))
+        conn.execute('DELETE FROM grades WHERE id = ?', (id,))
         conn.commit()
         conn.close()
 
