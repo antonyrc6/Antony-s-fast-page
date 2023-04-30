@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # create a function to connect to the database
 def get_db_connection():
-    conn = sqlite3.connect('/_notebooks/files/grade.db')
+    conn = sqlite3.connect('./grade.db')
     conn.row_factory = sqlite3.Row
     return conn
 
