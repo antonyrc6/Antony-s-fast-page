@@ -10,7 +10,7 @@ def get_db_connection():
     return conn
 
 # create a route for creating a profile
-@app.route('/create_profile', methods=['GET', 'POST'])
+@app.route('/Antony-s-fast-page/create_profile', methods=['GET', 'POST'])
 def create_profile():
     if request.method == 'POST':
         # get the input values from the form
@@ -31,7 +31,7 @@ def create_profile():
     return render_template('create_profile.html')
 
 # create a route for reading a profile
-@app.route('/read_profile', methods=['GET', 'POST'])
+@app.route('/Antony-s-fast-page/read_profile', methods=['GET', 'POST'])
 def read_profile():
     if request.method == 'POST':
         # get the input value from the form
@@ -49,7 +49,7 @@ def read_profile():
     return render_template('read_profile.html')
 
 # create a route for updating a profile
-@app.route('/update_profile', methods=['GET', 'POST'])
+@app.route('/Antony-s-fast-page/update_profile', methods=['GET', 'POST'])
 def update_profile():
     if request.method == 'POST':
         # get the input values from the form
@@ -69,7 +69,7 @@ def update_profile():
     return render_template('update_profile.html')
 
 # create a route for deleting a profile
-@app.route('/delete_profile', methods=['GET', 'POST'])
+@app.route('/Antony-s-fast-page/delete_profile', methods=['GET', 'POST'])
 def delete_profile():
     if request.method == 'POST':
         # get the input value from the form
