@@ -10,7 +10,7 @@ def get_db_connection():
     return conn
 
 # create a route for creating a profile
-@app.route('/create_profile', methods=['GET', 'POST'])
+@app.route('https://antonyrc6.github.io/create_profile', methods=['GET', 'POST'])
 def create_profile():
     if request.method == 'POST':
         # get the input values from the form
