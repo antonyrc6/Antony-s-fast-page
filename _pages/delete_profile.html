@@ -1,0 +1,20 @@
+---
+layout: default
+permalink: /sqlhack/delete
+search_exclude: true
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Profile</title>
+</head>
+<body>
+	<h1>Delete Profile</h1>
+	<form action="/delete_profile" method="post">
+		<label for="id">ID:</label>
+		<input type="number" id="id" name="id"><br><br>
+		<input type="submit" value="Delete">
+	</form>
+</body>
+</html>

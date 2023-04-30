@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: /sqlhack/profile
+search_exclude: true
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+</head>
+<body>
+	<h1>Profile</h1>
+	{% if profile %}
+		<p>ID: {{ profile['id'] }}</p>
+		<p>Name: {{ profile['name'] }}</p>
+		<p>Grade: {{ profile['grade'] }}</p>
+	{% else %}
+		<p>No profile found with that ID.</p>
+	{% endif %}
+</body>
+</html>

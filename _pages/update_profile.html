@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: /sqlhack/update
+search_exclude: true
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Profile</title>
+</head>
+<body>
+	<h1>Update Profile</h1>
+	<form action="/update_profile" method="post">
+		<label for="id">ID:</label>
+		<input type="number" id="id" name="id"><br><br>
+		<label for="grade">New Grade:</label>
+		<input type="text" id="grade" name="grade"><br><br>
+		<input type="submit" value="Update">
+	</form>
+</body>
+</html>
