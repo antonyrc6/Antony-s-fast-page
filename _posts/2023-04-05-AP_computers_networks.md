@@ -176,3 +176,5 @@ result = ray.get(part1_result) + ray.get(part2_result)
 print(result)
 
 ```
+### Full Stack
+![](/images/Full%20Stack.jpg)
