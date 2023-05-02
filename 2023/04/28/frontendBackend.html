@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      12 min read
     
 </span></p>
 
@@ -133,7 +133,13 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Backend-and-Frontend-Example">Backend and Frontend Example </a></li>
 <li class="toc-entry toc-h1"><a href="#Write-notes-below">Write notes below </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Create-database-file">Create database file </a></li>
+<li class="toc-entry toc-h3"><a href="#CRUD">CRUD </a></li>
+<li class="toc-entry toc-h3"><a href="#Fetch">Fetch </a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><!--
@@ -632,7 +638,11 @@ Delete: Option for deleting every film, also takes in a name to delete that film
 <h1 id="Write-notes-below">
 <a class="anchor" href="#Write-notes-below" aria-hidden="true"><span class="octicon octicon-link"></span></a>Write notes below<a class="anchor-link" href="#Write-notes-below"> </a>
 </h1>
-<p>CRUD is the action of (create, read, undate, ans delete)</p>
+<p>CRUD is the action of (create, read, undate, ans delete)<br>
+To fetch, 
+The CRUD features are very affective.
+it is important to define variable and class names to stay organized
+Pandas is a way to request from a api</p>
 
 </div>
 </div>
@@ -658,6 +668,218 @@ Delete: Option for deleting every film, also takes in a name to delete that film
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Create-database-file">
+<a class="anchor" href="#Create-database-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create database file<a class="anchor-link" href="#Create-database-file"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'books.db'</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'''CREATE TABLE books</span>
+<span class="s1">             (id INTEGER PRIMARY KEY,</span>
+<span class="s1">              title TEXT,</span>
+<span class="s1">              author TEXT)'''</span><span class="p">)</span>
+
+<span class="n">books</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Intro to EE"</span><span class="p">,</span> <span class="s2">"author"</span><span class="p">:</span> <span class="s2">"John Smith"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Advance coding"</span><span class="p">,</span> <span class="s2">"author"</span><span class="p">:</span> <span class="s2">"John Doe"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Airplanes"</span><span class="p">,</span> <span class="s2">"author"</span><span class="p">:</span> <span class="s2">"Bob Johnson"</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="k">for</span> <span class="n">book</span> <span class="ow">in</span> <span class="n">books</span><span class="p">:</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO books VALUES (?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">book</span><span class="p">[</span><span class="s2">"id"</span><span class="p">],</span> <span class="n">book</span><span class="p">[</span><span class="s2">"title"</span><span class="p">],</span> <span class="n">book</span><span class="p">[</span><span class="s2">"author"</span><span class="p">]))</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="CRUD">
+<a class="anchor" href="#CRUD" aria-hidden="true"><span class="octicon octicon-link"></span></a>CRUD<a class="anchor-link" href="#CRUD"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">jsonify</span><span class="p">,</span> <span class="n">request</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="c1"># Sample data to be used in the API</span>
+<span class="n">books</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Intro to EE"</span><span class="p">,</span> <span class="s2">"author"</span><span class="p">:</span> <span class="s2">"John Smith"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Advance coding"</span><span class="p">,</span> <span class="s2">"author"</span><span class="p">:</span> <span class="s2">"John Doe"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"id"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Airplanes"</span><span class="p">,</span> <span class="s2">"author"</span><span class="p">:</span> <span class="s2">"Bob Johnson"</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1"># Create endpoint</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/books'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'POST'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">create_book</span><span class="p">():</span>
+    <span class="n">book</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">()</span>
+    <span class="n">books</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">book</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Book created successfully"</span><span class="p">}),</span> <span class="mi">201</span>
+
+<span class="c1"># Read all books endpoint</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/books'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'GET'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">read_books</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">books</span><span class="p">),</span> <span class="mi">200</span>
+
+<span class="c1"># Read single book endpoint</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/books/&lt;int:id&gt;'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'GET'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">read_book</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">book</span> <span class="ow">in</span> <span class="n">books</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">book</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">==</span> <span class="nb">id</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">book</span><span class="p">),</span> <span class="mi">200</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Book not found"</span><span class="p">}),</span> <span class="mi">404</span>
+
+<span class="c1"># Update endpoint</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/books/&lt;int:id&gt;'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'PUT'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">update_book</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">book</span> <span class="ow">in</span> <span class="n">books</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">book</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">==</span> <span class="nb">id</span><span class="p">:</span>
+            <span class="n">updated_book</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">get_json</span><span class="p">()</span>
+            <span class="n">book</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">updated_book</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Book updated successfully"</span><span class="p">}),</span> <span class="mi">200</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Book not found"</span><span class="p">}),</span> <span class="mi">404</span>
+
+<span class="c1"># Delete endpoint</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/books/&lt;int:id&gt;'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">'DELETE'</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">delete_book</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">book</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">books</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">book</span><span class="p">[</span><span class="s2">"id"</span><span class="p">]</span> <span class="o">==</span> <span class="nb">id</span><span class="p">:</span>
+            <span class="n">books</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Book deleted successfully"</span><span class="p">}),</span> <span class="mi">200</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">({</span><span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Book not found"</span><span class="p">}),</span> <span class="mi">404</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Fetch">
+<a class="anchor" href="#Fetch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fetch<a class="anchor-link" href="#Fetch"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;!</span>DOCTYPE html&gt;
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="n">Book</span> <span class="n">List</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+        <span class="o">/*</span> <span class="n">Add</span> <span class="n">some</span> <span class="n">basic</span> <span class="n">styles</span> <span class="k">for</span> <span class="n">the</span> <span class="n">book</span> <span class="nb">list</span> <span class="o">*/</span>
+        <span class="n">body</span> <span class="p">{</span>
+            <span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="n">sans</span><span class="o">-</span><span class="n">serif</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">h1</span> <span class="p">{</span>
+            <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">ul</span> <span class="p">{</span>
+            <span class="nb">list</span><span class="o">-</span><span class="n">style</span><span class="o">-</span><span class="nb">type</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+            <span class="n">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="n">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">li</span> <span class="p">{</span>
+            <span class="n">margin</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+            <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+            <span class="n">border</span><span class="p">:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="c1">#ccc;</span>
+        <span class="p">}</span>
+    <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Book</span> <span class="n">List</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">ul</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"book-list"</span><span class="o">&gt;&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+
+    <span class="o">&lt;!</span>-- Load the JavaScript file --&gt;
+    <span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">"script.js"</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">const</span> <span class="n">apiUrl</span> <span class="o">=</span> <span class="s1">'http://localhost:5000/books'</span><span class="p">;</span>
+
+<span class="n">const</span> <span class="n">bookList</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'book-list'</span><span class="p">);</span>
+
+<span class="o">//</span> <span class="n">Fetch</span> <span class="n">the</span> <span class="n">book</span> <span class="n">data</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">API</span>
+<span class="n">fetch</span><span class="p">(</span><span class="n">apiUrl</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">response</span> <span class="o">=&gt;</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+    <span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="o">//</span> <span class="n">Loop</span> <span class="n">through</span> <span class="n">the</span> <span class="n">book</span> <span class="n">data</span> <span class="ow">and</span> <span class="n">create</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">item</span> <span class="k">for</span> <span class="n">each</span> <span class="n">book</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">forEach</span><span class="p">(</span><span class="n">book</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="n">const</span> <span class="n">li</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s1">'li'</span><span class="p">);</span>
+            <span class="n">li</span><span class="o">.</span><span class="n">innerText</span> <span class="o">=</span> <span class="err">`$</span><span class="p">{</span><span class="n">book</span><span class="o">.</span><span class="n">title</span><span class="p">}</span> <span class="n">by</span> <span class="err">$</span><span class="p">{</span><span class="n">book</span><span class="o">.</span><span class="n">author</span><span class="p">}</span><span class="err">`</span><span class="p">;</span>
+            <span class="n">bookList</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">li</span><span class="p">);</span>
+        <span class="p">});</span>
+    <span class="p">})</span>
+    <span class="o">.</span><span class="n">catch</span><span class="p">(</span><span class="n">error</span> <span class="o">=&gt;</span> <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">error</span><span class="p">));</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
