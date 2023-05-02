@@ -177,4 +177,4 @@ print(result)
 
 ```
 ### Full Stack
-![](/images/Full%20Stack.jpg)
+![]({{site.baseurl}}/images/Full_Stack.jpg)
